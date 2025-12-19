@@ -1,0 +1,15 @@
+What problem does Context solve?
+
+Who provides the data?
+
+Who consumes the data?
+
+What breaks if Context is removed?
+
+1. in react we have to pass values or diff components values to many times so to ease this task the context is used, it makes the components pass through tree rather than beging passed as props 
+
+the data is provided by the parent to the context.provider which takes a value as props then it passed it to its desendents
+
+the data is comsumed by the child or the childs child its desendents by using the usecontext hook
+
+the decendents which use the context.provider with the usecontext hook will break as they will not find anything to work with kind off, the default values which were defined while create.context will be used, which will result in runtime error or irregular working etc
